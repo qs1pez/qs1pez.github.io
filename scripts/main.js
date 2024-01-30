@@ -13,12 +13,12 @@ let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
-  const myName = prompt("Please enter your name.");
+  const myName = prompt("¿Cómo te llamás?");
   if (!myName) {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = `Mozilla is cool, ${myName}`;
+    myHeading.textContent = `Chupame el culo ${myName}`;
   }
 }
 
@@ -27,7 +27,7 @@ if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Chupame la verga, ${storedName}`;
+  myHeading.textContent = `Chupame el culo ${storedName}`;
 }
   
 myButton.onclick = () => {
